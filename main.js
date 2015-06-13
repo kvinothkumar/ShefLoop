@@ -1,5 +1,5 @@
-Router.route('/', function () {
-  this.render('ShefLoop');
+/*Router.route('/', function () {
+  this.render('main');
 });
 
 Router.route('/forum', function () {
@@ -8,10 +8,16 @@ Router.route('/forum', function () {
   res.end('hello from the server\n');
 }, {where: 'server'});
 
+*/
 
 
 if (Meteor.isClient) {
-  
+
+Router.route('/', function () {
+  this.render('home');
+});
+
+Router.route('/forum');  
   
   Template._loginButtonsLoggedInDropdown.events({
     'click #login-buttons-edit-profile': function(event) {
