@@ -10,3 +10,8 @@ insecure
 bootstrap-3
 accounts-ui-bootstrap-3
 accounts-password
+less
+useraccounts:core
+meteor
+templating
+iron:router

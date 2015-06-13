@@ -1,3 +1,15 @@
+Router.route('/', function () {
+  this.render('ShefLoop');
+});
+
+Router.route('/forum', function () {
+  var req = this.request;
+  var res = this.response;
+  res.end('hello from the server\n');
+}, {where: 'server'});
+
+
+
 if (Meteor.isClient) {
   
   
